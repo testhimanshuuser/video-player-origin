@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/video', (req, res) => {
-  const videoPath = 'client/test.mp4';
+  const videoPath = 'test.mp4';
   const stat = fs.statSync(videoPath);
   console.log(stat);
   const fileSize = stat.size;
